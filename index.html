@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Feature Extractor</title>
+		<link href="favicon.png" rel="icon" type="image.png"/>
+		<link href="https://unpkg.com/wingcss" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+  </head>
+	 <body>
+		<div class="col-4" id="main">
+			<a href="/demo.mp4"><h5>Watch the demo</h5></a>
+			<div id="video">
+				<!-- Video goes here -->
+			</div>
+
+			<div id="data">
+				<!-- Buttons to add training images -->
+				<button id="blue">🔵 - <span id="blueCount">0</span> images</button>
+				<button id="red">🔴 - <span id="redCount">0</span> images</button>
+
+				<br>
+
+				<button id="train" class='outline'>Train 🚋</button>
+
+				<!-- The predict button is hidden until our model  has been trained. -->
+				<button id="predict" class='outline'>Predict 🔮</button>
+
+				<br>
+
+				<!-- Shows when our model is ready -->
+
+				<em id="info">You should add at least 15 examples of each before training!</em>
+
+			</div>
+		</div>
+	
+		<!-- Import ml5.js, p5.js and p5.dom.js  -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+		<script src="https://unpkg.com/ml5"></script>
+
+		
+    <script src="script.js"></script>
+  </body>
+</html>
